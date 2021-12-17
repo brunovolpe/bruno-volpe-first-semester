@@ -33,7 +33,7 @@ h1{
     font-family: 'Alfa Slab One', cursive;
     color: var(--yellow-color);
     text-shadow: -2px 2px var(--shade-color);
-    font-size: 42px;
+    font-size: 4em;
 }
 
 h2{
@@ -61,12 +61,14 @@ p{
     box-shadow: -3px 3px var(--shade-color);
     display: flex;
     justify-content: center;
+    text-align: center;   
 }
 
 .watch-button p{
     font-family: 'Alfa Slab One', cursive;
     color: var(--shade-color);
     font-size: 20px;
+    text-indent: 0;
 }
 
 .about-me{
@@ -83,10 +85,12 @@ p{
 
 .about-me h3{
     background-image: url('../home-images/about-me.JPG');
-    background-size: 100px;
+    background-size: cover;
     background-clip: text;
+    background-position: 0 57%;
     -webkit-background-clip: text;
     color: transparent;
+    background-repeat: no-repeat;
 }
 
 .jumping-img{
@@ -108,10 +112,12 @@ p{
 
 .titles{
     background-image: url('../home-images/Collage-sin-lineas.jpg');
-    background-size: 100px;
+    background-size: cover;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 .photography{
@@ -306,11 +312,38 @@ footer h3{
     }
     .about-me h3{
         text-align-last: center;
+        line-height: 0.85;
+        background-position: 0 40%;
     }
     .about-me br{
         display: inline;
     }
     .jumping-img{
         width: 15vw;
+    }
+
+    h1{
+        font-size: 7em;
+        text-shadow: -4px 4px var(--shade-color);
+    }
+    h2{
+        font-size: 2.5em;
+        text-shadow: -3px 3px var(--shade-color);
+    }
+
+    .watch-button{
+        background-color:var(--yellow-color);
+        border-radius: 40px;
+
+        width: 150px;
+        box-shadow: -4px 4px var(--shade-color);
+ 
+    }
+    
+    .watch-button p{
+        font-family: 'Alfa Slab One', cursive;
+        color: var(--shade-color);
+        font-size: 2em;
+        text-indent: 0;
     }
 }
